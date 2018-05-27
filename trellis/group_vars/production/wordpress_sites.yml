@@ -6,8 +6,6 @@ wordpress_sites:
   melody.boutique:
     site_hosts:
       - canonical: melody.boutique
-        redirects:
-          - melody.boutique
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
     repo: git@github.com:darrenlzh/melody-fashion-wp.git
     repo_subtree_path: site
@@ -15,7 +13,7 @@ wordpress_sites:
     multisite:
       enabled: false
     ssl:
-      enabled: false
-      provider: self-signed
+      enabled: true
+      provider: letsencrypt
     cache:
-      enabled: false
+      enabled: true
