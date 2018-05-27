@@ -9,7 +9,9 @@ wordpress_sites:
         redirects:
           - melody.boutique
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
-    admin_email: hellomelodyboutique@gmail.com
+    repo: git@github.com:darrenlzh/melody-fashion-wp.git
+    repo_subtree_path: site
+    branch: master
     multisite:
       enabled: false
     ssl:
