@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "23edf50444f013878e4c2ed857cd6389",
+    "content-hash": "882f026922f1fa837836a7255328245b",
     "packages": [
         {
             "name": "composer/installers",
@@ -125,6 +125,45 @@
                 "zikula"
             ],
             "time": "2017-12-29T09:13:20+00:00"
+        },
+        {
+            "name": "ggamel/wp-sync-db",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ggamel/wp-sync-db.git",
+                "reference": "4616e3a53f77248b0fa6297a6bc4a570e3d9a501"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ggamel/wp-sync-db/zipball/4616e3a53f77248b0fa6297a6bc4a570e3d9a501",
+                "reference": "4616e3a53f77248b0fa6297a6bc4a570e3d9a501",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "scripts": {
+                "test": [
+                    "./test.sh"
+                ]
+            },
+            "license": [
+                "GPL-2.0"
+            ],
+            "description": "WP Sync DB eliminates the manual work of migrating a WP database.",
+            "homepage": "https://github.com/ggamel/wp-sync-db",
+            "keywords": [
+                "db",
+                "plugin",
+                "wordpress",
+                "wp-sync-db"
+            ],
+            "support": {
+                "source": "https://github.com/ggamel/wp-sync-db/tree/master"
+            },
+            "time": "2017-10-26T13:57:58+00:00"
         },
         {
             "name": "johnpbloch/wordpress",
@@ -404,17 +443,6 @@
             "time": "2016-09-01T10:05:43+00:00"
         },
         {
-            "name": "wp-sync-db/wp-sync-db",
-            "version": "1.5",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/wp-sync-db/wp-sync-db/archive/1.5.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "type": "wordpress-plugin"
-        },
-        {
             "name": "wp-sync-db/wp-sync-db-media-files",
             "version": "1.1.5",
             "dist": {
@@ -501,7 +529,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "ggamel/wp-sync-db": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

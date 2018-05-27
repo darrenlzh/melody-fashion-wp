@@ -32,17 +32,9 @@
             "type": "composer",
             "url": "https://wpackagist.org"
         },
-        "wp-sync-db": {
-            "type": "package",
-            "package": {
-                "name": "wp-sync-db/wp-sync-db",
-                "type": "wordpress-plugin",
-                "version": "1.5",
-                "dist": {
-                    "type": "zip",
-                    "url": "https://github.com/wp-sync-db/wp-sync-db/archive/1.5.zip"
-                }
-            }
+        "1": {
+            "type": "vcs",
+            "url": "git@github.com:ggamel/wp-sync-db.git"
         },
         "wp-sync-db-media-files": {
             "type": "package",
@@ -65,7 +57,7 @@
         "oscarotero/env": "^1.1.0",
         "roots/wp-password-bcrypt": "1.0.0",
         "wpackagist-plugin/woocommerce": "^3.4",
-        "wp-sync-db/wp-sync-db": "*",
+        "ggamel/wp-sync-db": "dev-master",
         "wp-sync-db/wp-sync-db-media-files": "*"
     },
     "require-dev": {
