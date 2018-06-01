@@ -3,9 +3,9 @@
 # Define accompanying passwords/secrets in group_vars/production/vault.yml
 
 wordpress_sites:
-  melody.boutique:
+  melodyboutique.com:
     site_hosts:
-      - canonical: melody.boutique
+      - canonical: melodyboutique.com
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
     repo: git@github.com:darrenlzh/melody-fashion-wp.git
     repo_subtree_path: site

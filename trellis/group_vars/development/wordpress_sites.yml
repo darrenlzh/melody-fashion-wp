@@ -3,13 +3,13 @@
 # Define accompanying passwords/secrets in group_vars/development/vault.yml
 
 wordpress_sites:
-  melody.boutique:
+  melodyboutique.com:
     site_hosts:
-      - canonical: melodyfashion.test
+      - canonical: melodyboutique.test
         redirects:
-          - www.melodyfashion.test
+          - www.melodyboutique.test
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
-    admin_email: admin@melodyfashion.test
+    admin_email: admin@melodyboutique.test
     multisite:
       enabled: false
     ssl:
